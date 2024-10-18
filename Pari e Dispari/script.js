@@ -3,14 +3,16 @@
 const userChoice = prompt("Scegli 'pari' o 'dispari'");
 const userNumber = parseInt(prompt("Inserisci un numero da 1 a 5:"));
 
-console.log(userChoice);
-console.log(userNumber);
+console.log(`Hai scelto ${userChoice}`);
+console.log(` Hai scelto il numero ${userNumber}`);
 
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+const computerNumber = getRndInteger(1, 5);
+console.log(`Il numero del computer è ${computerNumber}`)
 
-
-
-
+// Sommiamo i due numeri
+let sumTwoNumber = userNumber + computerNumber;
+console.log(`La somma dei due numeri è ${sumTwoNumber}`);
 
 
 
@@ -20,3 +22,13 @@ console.log(userNumber);
 
 
 // Function
+
+/*Genera un numero intero random compreso tra min e max intrambi inclusi
+ * @param {number} min
+ * @param {number} max
+ * @returns {number}
+ */
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
