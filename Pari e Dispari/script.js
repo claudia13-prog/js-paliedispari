@@ -16,7 +16,8 @@ console.log(`La somma dei due numeri è ${sumTwoNumber}`);
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 
-
+const evenOddResult = (evenOdd(sumTwoNumber));
+console.log(`La somma dei due numeri è ${evenOddResult}`);
 
 
 
