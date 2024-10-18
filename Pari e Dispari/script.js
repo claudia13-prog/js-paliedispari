@@ -14,6 +14,7 @@ console.log(`Il numero del computer è ${computerNumber}`)
 let sumTwoNumber = userNumber + computerNumber;
 console.log(`La somma dei due numeri è ${sumTwoNumber}`);
 
+// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 
 
 
@@ -32,3 +33,18 @@ console.log(`La somma dei due numeri è ${sumTwoNumber}`);
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
+
+
+/* La funzione che definisce se il numero è pari o dispari
+ * @param {number} numToCheck
+ * @returns {string} "even" se il numero è pari, "odd" se il numero è dispari
+ */
+function evenOdd(numToCheck) {
+    let result = "";
+    if(numToCheck % 2 === 0) {
+      result = "pari";
+    } else {
+      result = "dispari";
+    }
+    return result;
+  }
