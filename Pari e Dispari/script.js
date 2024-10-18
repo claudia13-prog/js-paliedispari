@@ -19,7 +19,14 @@ console.log(`La somma dei due numeri è ${sumTwoNumber}`);
 const evenOddResult = (evenOdd(sumTwoNumber));
 console.log(`La somma dei due numeri è ${evenOddResult}`);
 
+// Dichiariamo chi ha vinto.
 
+if(userChoice === evenOddResult){
+    console.log("Hai vinto!");
+
+} else {
+    console.log("Hai perso");
+}
 
 
 
